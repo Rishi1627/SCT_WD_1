@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillCraft Technology</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Pastel Gradient Background */
+            color: #333; /* Dark Text Color */
+        }
+
+        /* Navigation Menu Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.9); /* White Background */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s, padding 0.3s;
+            z-index: 1000;
+        }
+
+        .navbar.scrolled {
+            background-color: #ffffff; /* Solid White Background on Scroll */
+        }
+
+        .navbar a {
+            color: #4a4a4a; /* Dark Gray */
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: #6a1b9a; /* Dark Purple Background on Hover */
+            color: #fff; /* White Text on Hover */
+        }
+
+        /* Main Content Styles */
+        .content {
+            padding: 80px 20px; /* Add padding to avoid overlap with navbar */
+            max-width: 800px; /* Limit width for better readability */
+            margin: auto; /* Center the content */
+            background: rgba(255, 255, 255, 0.95); /* Slightly transparent white background */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+
+        h1 {
+            text-align: center;
+            color: #6a1b9a; /* Dark Purple */
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            color: #4a4a4a; /* Dark Gray */
+            margin-top: 40px;
+            font-size: 2rem;
+            border-bottom: 2px solid #6a1b9a; /* Underline effect */
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin: 20px 0;
+            line-height: 1.6;
+            color: #555; /* Darker Gray for text */
+            font-size: 1.1rem;
+        }
+
+        ul {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar a {
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar" id="navbar">
+        <div class="logo">SkillCraft Technology</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to SkillCraft Technology</h1>
+            <p>Your partner in innovative technology solutions. We empower businesses to achieve their goals through cutting-edge software and IT services.</p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>At SkillCraft, we specialize in transforming ideas into reality. Our team of experts is dedicated to delivering tailored solutions that drive success.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>Explore our range of services designed to elevate your business:</p>
+            <ul>
+                <li><strong>Custom Software Development:</strong> Tailored solutions for your unique needs.</li>
+                <li><strong>IT Consulting:</strong> Strategic insights to optimize your technology.</li>
+                <li><strong>Digital Transformation:</strong> Embrace the future with innovative strategies.</li>
+                <li><strong>Cloud Solutions:</strong> Scalable services for enhanced collaboration.</li>
+                <li><strong>Cybersecurity:</strong> Protect your business with robust security measures.</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Ready to take the next step? Get in touch with us:</p>
+            <p>Email: <a href="mailto:info@skillcrafttechnology.com">info@skillcrafttechnology.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p>Address: 123 SkillCraft Lane, Tech City, ST 12345</p>
+        </section>
+    </div>
+
+    <script>
+        // Change navbar style on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
